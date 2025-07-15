@@ -17,8 +17,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  console.log('Clerk Key:', process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY);
+
   return (
-    <ClerkProvider>
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <AppContextProvider>
         <html lang="en">
           <body className={`${inter.className} antialiased`}>
