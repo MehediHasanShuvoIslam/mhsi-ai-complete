@@ -3,6 +3,8 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { AppContextProvider } from "@/context/AppContext";
 import { Toaster } from "react-hot-toast";
+import { assets } from "@/assets/assets";
+import BauBadge from "@/components/BauBadge";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -26,6 +28,7 @@ export default function RootLayout({ children }) {
                 error: { style: { background: "black", color: "white" } },
               }}
             />
+            <BauBadge />
             {children}
           </body>
         </html>

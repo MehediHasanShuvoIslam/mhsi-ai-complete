@@ -22,6 +22,7 @@ import chat_icon_dull from "./chat_icon_dull.svg";
 import qrcode from "./qrcode.png";
 import three_dots from "./three_dots.svg";
 import new_icon from "./new_icon.svg";
+import bau_logo from "./bau_logo.svg";
 
 export const assets = {
   arrow_icon,
@@ -48,4 +49,5 @@ export const assets = {
   qrcode,
   three_dots,
   new_icon,
+  bau_logo,
 };
